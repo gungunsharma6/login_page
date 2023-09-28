@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a576e11d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form action="">
+                <div class="inputgrp">
+                    <div class="inputfield" id="field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputfield">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputfield">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p>forget password ? <a href="#">Click here</a></p>
+                </div>
+                <div class="btn">
+                    <button type="button" id="up">Sign Up</button>
+                    <button type="button" class="disable" id="in">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signup=document.getElementById("up");
+        let signip=document.getElementById("in");
+        let field=document.getElementById("field");
+        let title=document.getElementById("title");
+
+        signip.onclick=function(){
+            field.style.maxHeight='0';
+            title.innerHTML="Sign In";
+            signup.classList.add("disable");
+            signip.classList.remove("disable");
+            
+        }
+        signup.onclick=function(){
+            field.style.maxHeight='60px';
+            title.innerHTML="Sign Up";
+            signup.classList.remove("disable");
+            signip.classList.add("disable");
+            
+        }
+    </script>
+</body>
+</html>

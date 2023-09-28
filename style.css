@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url("https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+   
+}
+.formbox{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-color: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(126, 26, 220);
+    position: relative;
+
+}
+.formbox h1::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: rgb(126, 26, 220);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.inputfield{
+    background:rgb(234, 229, 232);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.2s;
+    overflow: hidden;
+    /* border: 0; */
+}
+input{
+    width: 100%;
+    background:transparent;
+    border: 0;
+    outline: 0;
+    padding:18px 14px ;
+    /* text-align: center; */
+    /* border-color: black; */
+}
+i{
+    margin-left: 20px;
+    color:rgb(63, 61, 62) ;
+}
+p{
+    text-align: left;
+    font-size: 13px;
+
+}
+a{
+    text-decoration: none;
+
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    flex-basis: 48%;
+    background:rgb(126, 26, 220);
+    color: white;
+    height: 40px;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: 1s;
+    border: 0;
+    outline: 0;
+
+}
+.inputgrp{
+    height: 270px;
+}
+ button.disable{
+    background-color:rgb(234, 229, 232);
+    color: rgb(63, 61, 62);
+ }
